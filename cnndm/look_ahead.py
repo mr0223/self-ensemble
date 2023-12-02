@@ -1,3 +1,5 @@
+## The original file is "https://github.com/GXimingLu/a_star_neurologic/blob/main/translation/look_ahead.py".
+## Changed where indicated by ##.
 import logging
 from typing import Iterable, Optional, Tuple
 

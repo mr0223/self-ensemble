@@ -1,6 +1,13 @@
 DEVICES=$1              # Specify GPU device to use
 BART_CHECKPOINT=$2      # Specify checkpoints for BART models trained on the direct corpus
 
+mkdir -p output/both ;
+mkdir -p output/positive ;
+mkdir -p output/negative ;
+mkdir -p output/_both ;
+mkdir -p output/_positive ;
+mkdir -p output/_negative ;
+
 CUDA_VISIBLE_DEVICES=${DEVICES} python decode.py --model_name ${BART_CHECKPOINT} \
   --input_path input/test.w.direct \
   --output_file output/both/b20.majority.s1.a0.5.n10.p4.b4.test.w.indirect \

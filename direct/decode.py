@@ -1,3 +1,5 @@
+## The original file is "https://github.com/GXimingLu/a_star_neurologic/blob/main/translation/decode.py".
+## Changed where indicated by ##.
 import json
 import math
 import argparse

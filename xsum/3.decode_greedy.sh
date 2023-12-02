@@ -1,6 +1,13 @@
 DEVICES=$1    # Specify GPU device to use
 MODEL_NAME='facebook/bart-large-cnn'
 
+mkdir -p output/both ;
+mkdir -p output/positive ;
+mkdir -p output/negative ;
+mkdir -p output/_both ;
+mkdir -p output/_positive ;
+mkdir -p output/_negative ;
+
 CUDA_VISIBLE_DEVICES=${DEVICES} python decode.py --model_name ${MODEL_NAME} \
   --data_type test \
   --output_file output/both/b90.majority.s1.a0.05.n8.p2.b6.test \

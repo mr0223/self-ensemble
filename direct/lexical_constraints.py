@@ -11,6 +11,8 @@
 # express or implied. See the License for the specific language governing
 # permissions and limitations under the License.
 
+## The original file is "https://github.com/GXimingLu/a_star_neurologic/blob/main/commongen_supervised/lexical_constraints.py".
+## Changed where indicated by ##.
 import copy
 import logging
 from operator import attrgetter

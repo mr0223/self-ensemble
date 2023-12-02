@@ -1,3 +1,5 @@
+## The original file is "https://github.com/GXimingLu/a_star_neurologic/blob/main/translation/generate.py".
+## Changed where indicated by ##.
 import torch
 from torch import Tensor
 from torch.nn import functional as F

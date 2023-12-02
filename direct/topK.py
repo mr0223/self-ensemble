@@ -1,3 +1,5 @@
+## The original file is "https://github.com/GXimingLu/a_star_neurologic/blob/main/translation/topK.py".
+## Changed where indicated by ##.
 import numpy as np
 import torch
 import math

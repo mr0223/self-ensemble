@@ -1,6 +1,13 @@
 DEVICES=$1                      # Specify GPU device to use
 PREDICT_MODEL_CHECKPOINT=$2     # Specify the name of the predict model trained in 1.train_predict_model.sh
 
+mkdir -p constraint/both ;
+mkdir -p constraint/positive ;
+mkdir -p constraint/negative ;
+mkdir -p constraint/_both ;
+mkdir -p constraint/_positive ;
+mkdir -p constraint/_negative ;
+
 CUDA_VISIBLE_DEVICES=${DEVICES} python beam_search.py \
     --checkpoint ${BART_CHECKPOINT} --input_path input/test.w.indirect --output_path output/baseline/b50.test.w.direct.csv --num_beams 50 --num_returns 50 ;
 CUDA_VISIBLE_DEVICES=${DEVICES} python beam_search.py \
