@@ -1,5 +1,5 @@
 # Self-Ensemble
-This is the official repo for the paper ["Self-Ensemble of N-best Generation Hypotheses by Lexically Constrained Decoding"](paper/emnlp2023_self_ensemble.pdf) (EMNLP 2023)
+This is the official repo for the paper ["Self-Ensemble of N-best Generation Hypotheses by Lexically Constrained Decoding"](https://aclanthology.org/2023.emnlp-main.905/) (EMNLP 2023)
 
 # LICENSE
 Our method uses [NeuroLogic A\*esque Decoding (NeuroLogic-A\*)](https://aclanthology.org/2022.naacl-main.57/) as a lexical constrained decoding method.
